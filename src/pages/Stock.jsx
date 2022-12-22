@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 
 function Stock (props){
 
-    const apiKey = 'd20473a3d1cbaca6376a63acbd02f373'
+    const apiKey = '4439d9e10d109a366e26cd806a9b4d38'
 
     const params = useParams()
     console.log(params)

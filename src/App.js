@@ -1,7 +1,6 @@
-
-import './App.css';
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import {Route, Routes} from "react-router-dom"
+import './App.css';
 import About from './pages/About';
 import Nav from './components/Nav';
 import Main from './pages/Main';
