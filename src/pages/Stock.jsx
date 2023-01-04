@@ -1,14 +1,16 @@
-import {useParams} from 'react-router-dom'
-import {useState, useEffect} from 'react'
+import { useParams } from "react-router-dom"
+import { useEffect, useState } from "react"
 
-function Stock (props){
 
+const Stock = (props) => {
     const apiKey = '4439d9e10d109a366e26cd806a9b4d38'
 
     const params = useParams()
     console.log(params)
     const symbol = params.symbol
+
     const url = `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=${apiKey}`
+
     const [stock, setStock] = useState('null')
 
     const getStock = async () => {
@@ -22,21 +24,15 @@ function Stock (props){
     }, [])
 
     return (
-        <div className="Price">
-        {stock === "null" ? (
-          <h2>Loading...</h2>
-        ) : (
+      <div className="Stock">
+          {!stock ? <h1>loading</h1> :
           <div>
-            <h1>{stock[0].name}</h1>
-            <p>{symbol}</p>
-            <p>Current price: ${stock[0].price}</p>
-            <p>Changes: {stock[0].changesPercentage}%</p>
-            <p>Day Low: ${stock[0].dayLow}</p>
-            <p>Day High: ${stock[0].dayHigh}</p>
+              <h2>{stock[0].name}</h2>
+              <h2>{stock[0].price}</h2>
           </div>
-        )}
-
+          }
       </div>
-    );
+  )
   }
-  export default Stock ;
+  
+  export default Stock 

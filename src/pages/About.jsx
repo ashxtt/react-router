@@ -1,7 +1,7 @@
-const About = (props) =>{
+function About(props) {
     return(
         <div className="About">
-            React Router App that keeps track of your stocks
+            <h1>Stock App </h1>
         </div>
     )
 }

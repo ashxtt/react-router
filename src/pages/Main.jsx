@@ -1,4 +1,4 @@
-const Main = (props) =>{
+function Main(props) {
     return(
         <div className="Main">
             Welcome to the Stocks App!

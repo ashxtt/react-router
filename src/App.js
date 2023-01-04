@@ -1,11 +1,11 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom"
-import './App.css';
+import './index.css';
 import About from './pages/About';
-import Nav from './components/Nav';
 import Main from './pages/Main';
 import Stock from './pages/Stock';
 import Stocks from './pages/Stocks';
+import Nav from './components/Nav';
 
 function App() {
   return (
@@ -14,10 +14,9 @@ function App() {
       <Routes>
         <Route path='/'element={<Main />} />
         <Route path='/about'element={<About />} />
-        <Route path='/stocks'element={<Stocks />} />
         <Route path='/stocks/:symbol'element={<Stock />} />
+        <Route path='/stocks'element={<Stocks />} />
       </Routes>
-      
     </div>
   );
 }
