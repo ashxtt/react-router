@@ -11,15 +11,16 @@ const Stock = (props) => {
 
     const [stock, setStock] = useState('null')
 
-    const getStock = async () => {
-        const res = await fetch(url)
-        const data = await res.json()
-        setStock(data)
-    }
+   
 
     useEffect (() => {
+         const getStock = async () => {
+        const res = await fetch(url)
+       const data = await res.json()
+        setStock(data)
+    }
         getStock()
-    }, [])
+    }, [url])
 
     return (
       <div className="Stock">
