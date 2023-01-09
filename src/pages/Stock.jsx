@@ -7,7 +7,6 @@ const Stock = (props) => {
     const params = useParams()
     console.log(params)
     const symbol = params.symbol
-
     const url = `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=${apiKey}`
 
     const [stock, setStock] = useState('null')
