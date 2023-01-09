@@ -35,22 +35,55 @@ body {
 .Stock{
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .Stock div{
-  background-color: #333333;
+  background-color: #3EFF92;
   border-radius: 10px;
-  height: 200px;
+  
   width: 200px;
+  text-align: center;
 }
 
 .Stock h2{
-  color:white;
+  color:#0D0D0D;
 }
 
 .Main{
   text-align: center;
   padding:2vmin;
   font-size: 4vmin;
+}
+
+.About{
+  display: flex;
+  justify-content: center;
+}
+
+.Stocks{
+  padding-left: 10px;
+  display:flex;
+  gap:20px;
+  align-items: center;
+}
+
+.Stocks a{
+  text-decoration: none;
+  color: #3EFF92;
+}
+.Stocks a:visited{
+  color:#D6D6D6;
+}
+
+.Stocks h2{
+  border: 1px solid black;
+  padding:5px;
+  border-radius: 5px;
+  background-color: #0D0D0D;
+  
+}
+.Stocks h2:hover{
+  box-shadow: 1px 2px 2px 1px #454545;
+  color:white;
 }

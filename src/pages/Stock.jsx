@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 
 const Stock = (props) => {
     const apiKey = '4439d9e10d109a366e26cd806a9b4d38'
-
     const params = useParams()
     console.log(params)
     const symbol = params.symbol

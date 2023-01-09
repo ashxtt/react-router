@@ -7,6 +7,7 @@ import Stock from './pages/Stock';
 import Stocks from './pages/Stocks';
 import Nav from './components/Nav';
 
+
 function App() {
   return (
     <div className="App">
